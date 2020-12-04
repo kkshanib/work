@@ -70,6 +70,7 @@ public class GeoMappingServiceImpl implements GeomappingService {
 				System.out.println("Success fully saved");
 			} catch(Exception e) {
 				System.out.println(e.getMessage());
+				e.printStackTrace();
 				
 			}			
 		}
