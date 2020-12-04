@@ -15,6 +15,5 @@ public interface CameraRepository extends MongoRepository<CameraEntity, String> 
 	
 	  CameraEntity findById(ObjectId id);
 
-	  List<CameraEntity> findBySubjectAndLocationNear(String sid, Point p, Distance d);
 
 	}

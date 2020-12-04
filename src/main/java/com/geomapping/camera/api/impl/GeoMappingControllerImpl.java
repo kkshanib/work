@@ -41,7 +41,7 @@ public class GeoMappingControllerImpl implements GeoMappingController {
 	}
    @Override
 	public GetNearByLocationsResponse getNearByLocation(GetNearByLocationsRequest getNearByLocationsRequest) {
-		return daoService.getNearByLocation(getNearByLocationsRequest);
+		return daoService.getNearByLocation	(getNearByLocationsRequest);
 	}
 
 }
