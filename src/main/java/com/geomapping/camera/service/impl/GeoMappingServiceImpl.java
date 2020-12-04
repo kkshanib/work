@@ -61,7 +61,7 @@ public class GeoMappingServiceImpl implements GeomappingService {
 		BaseResponse response = new BaseResponse();
 		response.setStatus(ResponseStatus.FAILURE);
 		List<ErrorVo> errorList = requestValidator.validateAddCameraRequest(cameraRequest);
-		if(errorList != null && !errorList.isEmpty()) {
+		if(errorList.isEmpty()) {
 			try {
 				Camera camera = cameraRequest.getCamera();
 				CameraEntity cameraEntity = getCameraEntity(camera);
@@ -90,7 +90,7 @@ public class GeoMappingServiceImpl implements GeomappingService {
 		BaseResponse response = new BaseResponse();
 		response.setStatus(ResponseStatus.FAILURE);
 		List<ErrorVo> errorList = requestValidator.validateAddLocationRequest(locationRequest);
-		if(errorList != null && !errorList.isEmpty()) {
+		if(errorList.isEmpty()) {
 			try {
 				Location location = locationRequest.getLocation();
 				LocationEntity locationEntity = getLocationEntity(location);
